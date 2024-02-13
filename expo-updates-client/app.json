@@ -13,7 +13,7 @@
     },
     "runtimeVersion": "1",
     "updates": {
-      "url": "https://custom-expo-updates-server-liard.vercel.app/",
+      "url": "https://custom-expo-updates-server-liard.vercel.app/api/manifest",
       "enabled": true,
       "fallbackToCacheTimeout": 30000,
       "codeSigningCertificate": "./code-signing/certificate.pem",
