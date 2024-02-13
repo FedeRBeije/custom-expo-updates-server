@@ -21,7 +21,7 @@
     "structured-headers": "^0.4.1"
   },
   "devDependencies": {
-    "@expo/config": "^7.0.3",
+    "@expo/config": "^8.5.4",
     "@expo/multipart-body-parser": "^1.1.0",
     "@types/jest": "^27.4.1",
     "@types/mime": "^2.0.3",
