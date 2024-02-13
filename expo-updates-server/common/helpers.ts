@@ -31,7 +31,7 @@ export function signRSASHA256(data: string, privateKey: string) {
 }
 
 export async function getPrivateKeyAsync() {
-  const privateKeyPath = process.env.PRIVATE_KEY_PATH;
+  const privateKeyPath = process.env.NEXT_PUBLIC_PRIVATE_KEY_PATH;
   if (!privateKeyPath) {
     return null;
   }
@@ -91,7 +91,7 @@ export async function getAssetMetadataAsync(arg: GetAssetMetadataArg) {
     key,
     fileExtension: `.${keyExtensionSuffix}`,
     contentType,
-    url: `${process.env.HOSTNAME}/api/assets?asset=${assetFilePath}&runtimeVersion=${arg.runtimeVersion}&platform=${arg.platform}`,
+    url: `${process.env.NEXT_PUBLIC_HOSTNAME}/api/assets?asset=${assetFilePath}&runtimeVersion=${arg.runtimeVersion}&platform=${arg.platform}`,
   };
 }
 
